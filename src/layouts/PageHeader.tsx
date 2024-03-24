@@ -1,4 +1,4 @@
-import { Bell, Menu, Mic, Search, Upload, User } from 'lucide-react'
+import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from 'lucide-react'
 import Logo from '../assets/react.svg'
 import Button from '../components/Button'
 import { useState } from 'react'
@@ -14,7 +14,10 @@ function PageHeader() {
                         <img src={Logo} alt="Logo" className='h-6' />
                     </a>
                 </div>
-                <form className='md:flex hidden gap-4 flex-grow justify-center'>
+                <form className={`md:flex gap-4 flex-grow justify-center ${showFullWidthSearch ? 'flex' : 'hidden'}`}>
+                    <Button onClick={()=> setShowFullWidthSearch(false)} type='button' size='icon' variant='ghost' className='flex-shrink-0'>
+                        <ArrowLeft />
+                    </Button>
                     <div className='flex flex-grow max-w-[600px]'>
                         <input type="search" placeholder='Search' className='rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none' />
                         <Button className='py-2 px-4 rounded-r-full border-secondary-border border border-l-0'>
