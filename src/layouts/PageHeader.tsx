@@ -15,9 +15,9 @@ function PageHeader() {
                     </a>
                 </div>
                 <form className={`md:flex gap-4 flex-grow justify-center ${showFullWidthSearch ? 'flex' : 'hidden'}`}>
-                    <Button onClick={()=> setShowFullWidthSearch(false)} type='button' size='icon' variant='ghost' className='flex-shrink-0'>
+                    {showFullWidthSearch && <Button onClick={()=> setShowFullWidthSearch(false)} type='button' size='icon' variant='ghost' className='flex-shrink-0'>
                         <ArrowLeft />
-                    </Button>
+                    </Button>}
                     <div className='flex flex-grow max-w-[600px]'>
                         <input type="search" placeholder='Search' className='rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none' />
                         <Button className='py-2 px-4 rounded-r-full border-secondary-border border border-l-0'>
