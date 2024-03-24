@@ -47,7 +47,8 @@ function CategoryPills({ categories, selectedCategory, onSelect }: CategoryPills
                 {isRightVisible && <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-white from-50% to-transparent w-24 h-full">
                     <Button variant='ghost' size='icon' className="h-full aspect-square w-auto p-1.5" onClick={() => {
                         setTranslate(translate => {
-                            if (containerRef.current == null) return translate
+                            if (containerRef.current == null) 
+                                return translate
                             const newTranslate = translate + TRANSLATE_AMOUNT
                             const edge = containerRef.current.scrollWidth
                             const width = containerRef.current.clientWidth
