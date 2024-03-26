@@ -7,6 +7,7 @@ import { VideoGridItem } from "./components/VideoGridItem"
 import { Sidebar } from "./layouts/Sidebar"
 import { SidebarProvider } from "./contexts/SidebarContext"
 import { JSX } from "react/jsx-runtime"
+import './App.css'
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0])
