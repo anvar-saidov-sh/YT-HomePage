@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
-// import { formatDuration } from "../utils/formatDuration"
-// import { formatTimeAgo } from "../utils/formatTimeAgo"
+import { formatDuration } from "../utils/formatDuration"
+import { formatTimeAgo } from "../utils/formatTimeAgo"
 
 type VideoGridItemProps = {
   id: string
@@ -57,7 +57,7 @@ export function VideoGridItem({
           }`}
         />
         <div className="absolute bottom-1 right-1 bg-secondary-dark text-secondary text-sm px-0.5 rounded">
-          {/* {formatDuration(duration)} */}
+          {formatDuration(duration)}
         </div>
         <video
           className={`block h-full object-cover absolute inset-0 transition-opacity duration-200 ${
@@ -81,7 +81,7 @@ export function VideoGridItem({
             {channel.name}
           </a>
           <div className="text-secondary-text text-sm">
-            {/* {VIEW_FORMATTER.format(views)} Views • {formatTimeAgo(postedAt)} */}
+            {VIEW_FORMATTER.format(views)} Views • {formatTimeAgo(postedAt)}
           </div>
         </div>
       </div>
