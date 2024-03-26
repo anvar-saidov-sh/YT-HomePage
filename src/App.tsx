@@ -2,7 +2,7 @@ import { useState } from "react"
 import CategoryPills  from "./components/CategoryPills"
 import { categories } from "./data/home"
 import {videos} from './data/home'
-import { PageHeader } from "./layouts/PageHeader"
+import {PageHeader}  from "./layouts/PageHeader"
 import { VideoGridItem } from "./components/VideoGridItem"
 import { Sidebar } from "./layouts/Sidebar"
 import { SidebarProvider } from "./contexts/SidebarContext"
