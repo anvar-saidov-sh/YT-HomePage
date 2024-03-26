@@ -10,7 +10,7 @@ type CategoryPillProps = {
 
 const TRANSLATE_AMOUNT = 200
 
-export function CategoryPills({
+export default function CategoryPills({
   categories,
   selectedCategory,
   onSelect,
