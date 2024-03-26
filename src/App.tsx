@@ -2,7 +2,7 @@ import { useState } from "react"
 import CategoryPills  from "./components/CategoryPills"
 import { categories } from "./data/home"
 import {videos} from './data/home'
-// import {PageHeader}  from "./layouts/PageHeader"
+import { PageHeader } from "./layouts/PageHeader"
 import { VideoGridItem } from "./components/VideoGridItem"
 import { Sidebar } from "./layouts/Sidebar"
 import { SidebarProvider } from "./contexts/SidebarContext"
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <SidebarProvider>
       <div className="max-h-screen flex flex-col">
-        {/* <PageHeader /> */}
+        <PageHeader />
         <div className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto">
           <Sidebar />
           <div className="overflow-x-hidden px-8 pb-4">
